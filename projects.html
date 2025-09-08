@@ -143,7 +143,6 @@
   </style>
 </head>
 <body>
-  <h1>Square Image Test</h1>
   <img src="image/IMG_6093.jpeg" alt="3D print" class="square-img">
 </body>
 </html>
@@ -198,7 +197,6 @@ For this project, I started by downloading and setting up PrusaSlicer. Once the 
   </style>
 </head>
 <body>
-  <h1>Square Image Test</h1>
   <img src="image/IMG_6094.jpeg" alt="3D print" class="square-img">
 </body>
 </html>
@@ -209,6 +207,42 @@ For this project, I started by downloading and setting up PrusaSlicer. Once the 
               For my second print, I chose a castle-style torture test that featured tall towers and several steep overhangs. I deliberately sliced and printed it without supports to see how the Prusa MINI+ would handle challenging geometries. 
               The vertical walls and towers came out fairly accurate, but the unsupported overhangs failed, bridges sagged and collapsed, leaving rough edges and incomplete features. This showed me that while the printer can reproduce simple and vertical shapes well,
               it struggles with designs that include large spans or unsupported angles unless supports are added. It also highlighted the design-side limitation: just because a 3D model looks good in CAD does not mean it is practical to print without modification.
+              <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Images Side by Side</title>
+  <style>
+    .image-row {
+      display: flex;       /* places them side by side */
+      gap: 20px;           /* space between pictures */
+    }
+    .square-img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;   /* crops without distortion */
+      border-radius: 20px; /* rounded corners */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="image-row">
+    <img src="image/IMG_6095.jpeg" alt="Print 1" class="square-img">
+    <img src="image/IMG_6096.jpeg" alt="Print 2" class="square-img">
+  </div>
+</body>
+</html>
+
+
+              <br>
+              In terms of file types, the STL I downloaded contained only the raw geometry of the castle, which meant I had to set up all of the slicing parameters myself in PrusaSlicer. A 3MF file, by contrast, can save not only the model but also the print settings, color changes, 
+              and other details, making it more useful for sharing ready-to-print projects.
+              <br>
+              <br>
+              Part 3
               <br>
               <!DOCTYPE html>
 <html lang="en">
@@ -231,30 +265,18 @@ For this project, I started by downloading and setting up PrusaSlicer. Once the 
   </style>
 </head>
 <body>
-  <h1>Two Side by Side Images</h1>
   <div class="image-row">
-    <img src="image/IMG_6095.jpeg" alt="Print 1" class="square-img">
-    <img src="image/IMG_6096.jpeg" alt="Print 2" class="square-img">
+    <img src="image/IMG_6098.jpeg" alt="Print 1" class="square-img">
+    <img src="image/IMG_6099.jpeg" alt="Print 2" class="square-img">
   </div>
 </body>
 </html>
-
-
-              <br>
-              In terms of file types, the STL I downloaded contained only the raw geometry of the castle, which meant I had to set up all of the slicing parameters myself in PrusaSlicer. A 3MF file, by contrast, can save not only the model but also the print settings, color changes, 
-              and other details, making it more useful for sharing ready-to-print projects.
-              <br>
-              <br>
-              Part 3
-              <br>
-               <img src="image/IMG_6098.jpeg" alt="holder flat" class="img-fluid rounded shadow-sm mt-3">
               <br>
               Process
               <br>
               For my open-source assistive device, I printed a tool designed to help hold a book open with one hand. The device fits over the thumb and uses two angled wings to press down the pages, making it easier to keep the book open without needing both hands.
               This design is especially useful for people with limited mobility, or for anyone who wants to comfortably read while using their other hand for something else.
               <br>
-               <img src="image/IMG_6099.jpeg" alt="holder in use" class="img-fluid rounded shadow-sm mt-3">
               <br>
               The print came out clean and functional on the first try. The documentation from Makers Making Change was clear and easy to follow, with well-prepared STL files and usage instructions. I found that the device worked as intended, though I noticed that the size 
               and angle could vary depending on the thickness of the book, something that might be improved by offering multiple size options or making the design adjustable. Overall, this project demonstrated how 3D printing can be used to quickly and inexpensively create
