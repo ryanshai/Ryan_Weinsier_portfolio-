@@ -147,10 +147,11 @@
   <img src="image/IMG_6093.jpeg" alt="3D print" class="square-img">
 </body>
 </html>
-}
 
 
 
+
+              <br>
               <br>
               WorkFlow
               <br>
@@ -180,7 +181,27 @@ For this project, I started by downloading and setting up PrusaSlicer. Once the 
               <br>
               Part 2
               <br>
-              <img src="./image/IMG_6094.jpeg" class="img-thumbnail rounded-circle" style="width:100px; height:100px; object-fit:cover;">
+              <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Image Example</title>
+  <style>
+    .square-img {
+      width: 250px;        /* square size */
+      height: 250px;       /* same as width */
+      object-fit: cover;   /* crops instead of stretching */
+      border-radius: 20px; /* rounded corners */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional shadow */
+    }
+  </style>
+</head>
+<body>
+  <h1>Square Image Test</h1>
+  <img src="image/IMG_6094.jpeg" alt="3D print" class="square-img">
+</body>
+</html>
               <br>
               Process
               <br>
@@ -189,8 +210,34 @@ For this project, I started by downloading and setting up PrusaSlicer. Once the 
               The vertical walls and towers came out fairly accurate, but the unsupported overhangs failed, bridges sagged and collapsed, leaving rough edges and incomplete features. This showed me that while the printer can reproduce simple and vertical shapes well,
               it struggles with designs that include large spans or unsupported angles unless supports are added. It also highlighted the design-side limitation: just because a 3D model looks good in CAD does not mean it is practical to print without modification.
               <br>
-              <img src="image/IMG_6095.jpeg" alt="castle front" class="img-fluid rounded shadow-sm mt-3">
-              <img src="image/IMG_6096.jpeg" alt="castle bottom" class="img-fluid rounded shadow-sm mt-3">
+              <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Images Side by Side</title>
+  <style>
+    .image-row {
+      display: flex;       /* places them side by side */
+      gap: 20px;           /* space between pictures */
+    }
+    .square-img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;   /* crops without distortion */
+      border-radius: 20px; /* rounded corners */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Two Side by Side Images</h1>
+  <div class="image-row">
+    <img src="image/IMG_6095.jpeg" alt="Print 1" class="square-img">
+    <img src="image/IMG_6096.jpeg" alt="Print 2" class="square-img">
+  </div>
+</body>
+</html>
 
 
               <br>
