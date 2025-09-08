@@ -126,13 +126,27 @@
             <p>
               Part 1
               <br>
-           <img src="image/IMG_0693.jpeg" alt="3D printed nametag" class="square-img">
-           .square-img {
-  width: 250px;       /* pick the size you like */
-  height: 250px;      /* same as width → square */
-  object-fit: cover;  /* crops without distortion */
-  border-radius: 20px; /* rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional: soft shadow */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Image Example</title>
+  <style>
+    .square-img {
+      width: 250px;        /* square size */
+      height: 250px;       /* same as width */
+      object-fit: cover;   /* crops instead of stretching */
+      border-radius: 20px; /* rounded corners */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* optional shadow */
+    }
+  </style>
+</head>
+<body>
+  <h1>Square Image Test</h1>
+  <img src="image/IMG_6093.jpeg" alt="3D print" class="square-img">
+</body>
+</html>
 }
 
 
