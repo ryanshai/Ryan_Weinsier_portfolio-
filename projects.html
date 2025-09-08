@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Projects by Ryan Weinsier - Engineering Portfolio" />
+  <meta name="author" content="Ryan Weinsier" />
+  <title>Projects - Ryan Weinsier</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: #343a40;
+    }
+    #mainNav {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    #mainNav .nav-link {
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    #mainNav .nav-link:hover {
+      color: #0d6efd;
+    }
+    header.masthead {
+      padding: 6rem 0;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('assets/img/projects-bg.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+    }
+    header.masthead h1 {
+      font-family: 'Lora', serif;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    /* Project Card */
+    .project-card {
+      background: #f8f9fa;
+      border-radius: 1rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+    .project-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .project-body {
+      padding: 1.5rem;
+    }
+    .project-body h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .project-body p {
+      color: #6c757d;
+    }
+    footer {
+      padding: 2rem 0;
+      background: #f8f9fa;
+    }
+    footer .fa-stack:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Ryan Weinsier</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <h1>Projects</h1>
+      <p class="lead">A showcase of my engineering work</p>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <main class="container my-5">
+    <div class="row justify-content-center">
+
+      <!-- Project 1 -->
+      <div class="col-md-10 col-lg-8">
+        <div class="project-card" id="project1">
+          <img src="assets/img/project1.jpg" alt="Robotics Design Project" class="project-img">
+          <div class="project-body">
+            <h3>Robotics Design Project</h3>
+            <p>
+              Built and programmed a robotic arm for precision tasks. 
+              This project explored robotics control systems, automation, and teamwork.
+            </p>
+            <p class="text-muted">Fall 2025 · Engineering 101</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-10 col-lg-8">
+        <div class="project-card" id="project2">
+          <img src="assets/img/project2.jpg" alt="Sustainable Energy System" class="project-img">
+          <div class="project-body">
+            <h3>Sustainable Energy System</h3>
+            <p>
+              Designed a small-scale renewable energy grid using solar and wind power. 
+              Focused on efficiency, scalability, and sustainability.
+            </p>
+            <p class="text-muted">Fall 2025 · Engineering 101</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-10 col-lg-8">
+        <div class="project-card" id="project3">
+          <img src="assets/img/project3.jpg" alt="Bridge Stress Analysis" class="project-img">
+          <div class="project-body">
+            <h3>Bridge Stress Analysis</h3>
+            <p>
+              Analyzed materials and structural loads for a model bridge. 
+              Used simulation tools to understand stress distribution and safety margins.
+            </p>
+            <p class="text-muted">Fall 2025 · Engineering 101</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <ul class="list-inline mb-3">
+        <li class="list-inline-item">
+          <a href="https://github.com/rweinsier" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x text-dark"></i>
+              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <div class="small text-muted fst-italic">
+        © Ryan Weinsier · Engineering Portfolio 2025
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
