@@ -388,134 +388,47 @@ For this project, I started by downloading and setting up PrusaSlicer. Once the 
   <img src="image/IMG_6094.jpeg" alt="3D print" class="square-img">
 </body>
 </html>
-</p>
-              <br>
-              Process
-              <br>
-              
-              For my second print, I chose a castle-style torture test that featured tall towers and several steep overhangs. I deliberately sliced and printed it without supports to see how the Prusa MINI+ would handle challenging geometries. 
-              The vertical walls and towers came out fairly accurate, but the unsupported overhangs failed, bridges sagged and collapsed, leaving rough edges and incomplete features. This showed me that while the printer can reproduce simple and vertical shapes well,
-              it struggles with designs that include large spans or unsupported angles unless supports are added. It also highlighted the design-side limitation: just because a 3D model looks good in CAD does not mean it is practical to print without modification.
-              <br>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Two Images Side by Side</title>
-  <style>
-    .image-row {
-      display: flex;       /* places them side by side */
-      gap: 20px;           /* space between pictures */
-    }
-    .square-img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;   /* crops without distortion */
-      border-radius: 20px; /* rounded corners */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-  </style>
-</head>
-<body>
-  <div class="image-row">
-    <img src="image/IMG_6095.jpeg" alt="Print 1" class="square-img">
-    <img src="image/IMG_6096.jpeg" alt="Print 2" class="square-img">
-  </div>
-</body>
-</html>
+</p>     <p>
+        <strong>Part 2: Tinkercad Remix – Key Hanger</strong>
+        <br><br>
+        For my first remix, I used a <strong>wall-mounted key hanger</strong> model. I changed it by removing some of the hooks, making the remaining hooks deeper so keys would not fall off, and adding extra hooks along the platform on top for more storage. 
+        In Prusa Slicer, I scaled it slightly, laid it flat, and printed it in PLA at 0.2mm layer height with 15% infill. Supports were needed for the hook overhangs, and in the future I might redesign the angles to avoid them. 
+        The result was a more practical, personalized version of the original model.
+        <br><br>
+        <!-- Images for Part 2 -->
+        <img src="image/keyhanger-sketch.jpeg" alt="Key Hanger Sketch" class="square-img">
+        <img src="image/keyhanger-tinkercad.jpeg" alt="Key Hanger in Tinkercad" class="square-img">
+        <img src="image/keyhanger-slicer.jpeg" alt="Key Hanger in Prusa Slicer" class="square-img">
+        <img src="image/keyhanger-print.jpeg" alt="Finished Key Hanger Print" class="square-img">
+      </p>      <p>
+        <strong>Part 3: Fusion Remix – Hydroponic Planter</strong>
+        <br><br>
+        For my Fusion remix, I chose a <strong>small hydroponic planter</strong>. I scaled the overall size down to make it more compact, but enlarged the water-pouring opening so that it would still be functional. 
+        Fusion made this easier because I could directly edit dimensions instead of only scaling the whole model. 
+        I sliced it in Prusa Slicer with the opening facing upward, printed at 0.2mm layer height and 20% infill, and added supports for the water channel. 
+        The final print was usable, though I realized that scaling down made the wall thickness borderline too thin — next time I would increase the thickness in Fusion for durability.
+        <br><br>
+        <!-- Images for Part 3 -->
+        <img src="image/planter-sketch.jpeg" alt="Planter Sketch" class="square-img">
+        <img src="image/planter-fusion.jpeg" alt="Planter in Fusion 360" class="square-img">
+        <img src="image/planter-slicer.jpeg" alt="Planter in Prusa Slicer" class="square-img">
+        <img src="image/planter-print.jpeg" alt="Finished Planter Print" class="square-img">
+      </p>
 
+      <p>
+        <strong>Reflection</strong>
+        <br><br>
+        This project showed me how the workflow from sketch → CAD → slicing → print affects the final result. 
+        Tinkercad was intuitive and quick for remixing, while Fusion offered more advanced precision. 
+        My designs — ring trays, a custom key hanger, and a compact planter — all worked as intended, though each also revealed design limitations like thin walls or reliance on supports. 
+        If I optimized them further, I would adjust wall thicknesses, angles, and print settings to improve strength and efficiency. 
+        Overall, I learned how remixing existing designs can be a powerful way to adapt models to new uses and make them more functional for my needs.
+      </p>
 
-              <br>
-              In terms of file types, the STL I downloaded contained only the raw geometry of the castle, which meant I had to set up all of the slicing parameters myself in PrusaSlicer. A 3MF file, by contrast, can save not only the model but also the print settings, color changes, 
-              and other details, making it more useful for sharing ready-to-print projects.
-              <br>
-              <br>
-              Part 3
-              <br>
-              <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Two Images Side by Side</title>
-  <style>
-    .image-row {
-      display: flex;       /* places them side by side */
-      gap: 20px;           /* space between pictures */
-    }
-    .square-img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;   /* crops without distortion */
-      border-radius: 20px; /* rounded corners */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-  </style>
-</head>
-<body>
-  <div class="image-row">
-    <img src="image/IMG_6098.jpeg" alt="Print 1" class="square-img">
-    <img src="image/IMG_6099.jpeg" alt="Print 2" class="square-img">
-  </div>
-</body>
-</html>
-              <br>
-              Process
-              <br>
-              For my open-source assistive device, I printed a tool designed to help hold a book open with one hand. The device fits over the thumb and uses two angled wings to press down the pages, making it easier to keep the book open without needing both hands.
-              This design is especially useful for people with limited mobility, or for anyone who wants to comfortably read while using their other hand for something else.
-              <br>
-              <br>
-              The print came out clean and functional on the first try. The documentation from Makers Making Change was clear and easy to follow, with well-prepared STL files and usage instructions. I found that the device worked as intended, though I noticed that the size 
-              and angle could vary depending on the thickness of the book, something that might be improved by offering multiple size options or making the design adjustable. Overall, this project demonstrated how 3D printing can be used to quickly and inexpensively create
-              personalized assistive tools that improve accessibility in everyday life.
-
-
-            </p>
-            <p class="text-muted">Fall 2025 · Engineering 101</p>
-          </div>
-        </div>
-      </div>
-
-      
-
+      <p class="text-muted">Fall 2025 · Engineering 11a</p>
     </div>
-  </main>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Project 2 – Remixing and Learning CAD Tools</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    .section {
-      margin-bottom: 40px;
-      padding: 20px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    img {
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    .images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+  </div>
+</div>
   </style>
 </head>
 <body>
